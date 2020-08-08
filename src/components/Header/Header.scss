@@ -3,6 +3,7 @@
   position: fixed;
   width: 100%;
   transition: 0.1s background-color ease-in;
+  z-index: 1;
   &:hover {
     background-color: #fff;
   }

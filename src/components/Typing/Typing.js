@@ -3,9 +3,9 @@ import "./Typing.scss";
 
 const Typing = () => {
   return (
-    <div className="typing-wrapper">
+    <section className="typing-wrapper">
       <p className="typing">Get Today's news from Korea.</p>
-    </div>
+    </section>
   );
 };
 

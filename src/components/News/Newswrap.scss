@@ -1,0 +1,10 @@
+.news-wrapper {
+  display: flex;
+  background-color: white;
+  min-height: 100vh;
+  .news-section {
+    margin: 55px 40px;
+    width: 100%;
+    display: flex;
+  }
+}
