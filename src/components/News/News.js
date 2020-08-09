@@ -1,12 +1,12 @@
 import React from "react";
 import SubNews from "./SubNews";
-import MainNews from "./MainNews";
+import MainNewsContainer from "../../Container/MainNewsContainer";
 
 const News = () => {
   return (
     <>
       <SubNews />
-      <MainNews />
+      <MainNewsContainer />
     </>
   );
 };

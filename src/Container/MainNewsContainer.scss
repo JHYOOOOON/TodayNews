@@ -1,0 +1,23 @@
+.main {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  // 스크롤바 너비 설정
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  // 스크롤바 자리 배경
+  &::-webkit-scrollbar-track {
+    background-color: #eee;
+  }
+  // 스크롤바
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #ccc;
+    // 스크롤바 호버
+    &:hover {
+      background: #aaa;
+    }
+  }
+}

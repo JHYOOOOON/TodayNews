@@ -17,14 +17,18 @@ const Corona = () => {
           "x-rapidapi-key": process.env.REACT_APP_CORONA_KEY,
         },
       }
-    ).then((res) => {
-      setData(res.data);
-    });
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setData(data);
+      });
   }, []);
 
   useEffect(() => {
     fetchCoronaAPI();
-  });
+  }, []);
 
   return data === null ? (
     <Loading />
