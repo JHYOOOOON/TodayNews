@@ -2,7 +2,6 @@ import React from "react";
 import "./MainNews.scss";
 
 const printNews = (items) => {
-  console.log(":::::printNews", items);
   return items.map((item, i) => {
     return (
       <div className="news-item-wrapper" key={i}>

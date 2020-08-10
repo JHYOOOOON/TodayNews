@@ -1,4 +1,6 @@
 .corona-article {
+  display: flex;
+  flex-direction: column;
   padding: 15px;
   width: 100%;
   > p {
@@ -13,10 +15,12 @@
     font-size: 12px;
   }
   .corona-flex {
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
     .corona-left {
       .corona-inform {
         > p {

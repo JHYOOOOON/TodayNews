@@ -7,7 +7,7 @@ const printChart = (item) => {
   return (
     <Chart
       width={"170px"}
-      height={"160px"}
+      height={"150px"}
       chartType="PieChart"
       loader={<Loading />}
       data={[
@@ -23,9 +23,8 @@ const printChart = (item) => {
         legend: { position: "none" },
         title: "Corona status",
         backgroundColor: "transparent",
-        colors: ["#ee5253", "#341f97", "#feca57", "#2e86de"],
       }}
-      rootProps={{ "data-testid": "1" }}
+      rootProps={{ "data-testid": "2" }}
     />
   );
 };
@@ -49,7 +48,6 @@ const printCorona = (item) => {
   );
 };
 const Corona = ({ coronaData }) => {
-  console.log("corona:::", coronaData[0]);
   return (
     <article className="corona-article">
       <p className="corona-title">Corona Information</p>

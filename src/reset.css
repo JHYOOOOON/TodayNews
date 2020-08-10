@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  margin: 0;
+}
+
 ol,
 ul,
 li,

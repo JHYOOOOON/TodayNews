@@ -1,0 +1,53 @@
+.weather-article {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 100%;
+  .weather-title {
+    font-weight: 700;
+    font-size: 1.4em;
+  }
+  .weather-location {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .weather-flex {
+    flex: 1;
+    display: flex;
+    padding-top: 10px;
+    .weather-temp {
+      > span:first-child {
+        font-size: 27px;
+      }
+      > p,
+      span {
+        font-size: 13px;
+      }
+      .temp_min {
+        color: #2980b9;
+      }
+      .temp_max {
+        color: #c0392b;
+      }
+    }
+    .weather-current,
+    .weather-humid {
+      > span {
+        margin-top: 10px;
+      }
+    }
+    > div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      > i {
+        font-size: 45px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
