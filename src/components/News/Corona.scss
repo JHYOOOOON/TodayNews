@@ -1,0 +1,23 @@
+.corona-article {
+  padding: 15px;
+  width: 100%;
+  > p {
+    margin: 0;
+  }
+  .corona-title {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  .corona-update {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .corona-inform {
+    margin-top: 15px;
+    > p {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin: 7px 0;
+    }
+  }
+}

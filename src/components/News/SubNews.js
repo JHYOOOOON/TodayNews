@@ -1,10 +1,11 @@
 import React from "react";
 import "./SubNews.scss";
+import CoronaContainer from "../../Container/CoronaContainer";
 
 const SubNews = () => {
   return (
     <div className="sub-news-wrapper">
-      <div>Corona</div>
+      <CoronaContainer />
       <div>Weather</div>
     </div>
   );
