@@ -1,5 +1,34 @@
 import React from "react";
+import { Chart } from "react-google-charts";
+import Loading from "../Loading/Loading";
 import "./Corona.scss";
+
+const printChart = (item) => {
+  return (
+    <Chart
+      width={"170px"}
+      height={"160px"}
+      chartType="PieChart"
+      loader={<Loading />}
+      data={[
+        ["section", "people"],
+        ["confirmed", item.confirmed],
+        ["critical", item.critical],
+        ["deaths", item.deaths],
+        ["recovered", item.recovered],
+      ]}
+      options={{
+        is3D: true,
+        chartArea: { width: "100%", height: "100%" },
+        legend: { position: "none" },
+        title: "Corona status",
+        backgroundColor: "transparent",
+        colors: ["#ee5253", "#341f97", "#feca57", "#2e86de"],
+      }}
+      rootProps={{ "data-testid": "1" }}
+    />
+  );
+};
 
 const formatNumber = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -23,9 +52,12 @@ const Corona = ({ coronaData }) => {
   console.log("corona:::", coronaData[0]);
   return (
     <article className="corona-article">
-      <p className="corona-title">Corona Inform</p>
+      <p className="corona-title">Corona Information</p>
       {printUpdateTime(coronaData[0].lastUpdate)}
-      {printCorona(coronaData[0])}
+      <div className="corona-flex">
+        <div className="corona-left">{printCorona(coronaData[0])}</div>
+        <div className="corona-right">{printChart(coronaData[0])}</div>
+      </div>
     </article>
   );
 };

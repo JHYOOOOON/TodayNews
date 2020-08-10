@@ -2,15 +2,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-right: 15px;
+  margin-right: 25px;
   > div {
     justify-content: center;
     display: flex;
     &:first-child {
       margin-bottom: 15px;
-      flex: 1.5;
+      flex: 1;
       border-radius: 5px;
-      background-color: #fdddb1;
     }
     &:last-child {
       flex: 1;

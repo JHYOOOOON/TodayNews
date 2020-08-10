@@ -12,12 +12,23 @@
     font-weight: 300;
     font-size: 12px;
   }
-  .corona-inform {
+  .corona-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 15px;
-    > p {
-      font-size: 1.2em;
-      font-weight: 500;
-      margin: 7px 0;
+    .corona-left {
+      .corona-inform {
+        > p {
+          font-size: 1.2em;
+          font-weight: 500;
+          margin: 7px 0;
+        }
+      }
+    }
+    .corona-right {
+      display: block;
+      margin: 0 auto;
     }
   }
 }
