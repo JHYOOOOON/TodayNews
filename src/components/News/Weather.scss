@@ -1,7 +1,7 @@
 .weather-article {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   .weather-title {
     font-weight: 700;
@@ -15,13 +15,20 @@
     flex: 1;
     display: flex;
     padding-top: 10px;
+    gap: 10px;
+    .weather-temp,
+    .weather-current,
+    .weather-humid {
+      border-radius: 10px;
+      background: rgba(37, 132, 158, 0.05);
+    }
     .weather-temp {
       > span:first-child {
-        font-size: 27px;
+        font-size: 1.8em;
       }
       > p,
       span {
-        font-size: 13px;
+        font-size: 0.9em;
       }
       .temp_min {
         color: #2980b9;
@@ -43,10 +50,10 @@
       justify-content: center;
       align-items: center;
       > i {
-        font-size: 45px;
+        font-size: 2.7em;
       }
       span {
-        font-size: 20px;
+        font-size: 1.2em;
       }
     }
   }
