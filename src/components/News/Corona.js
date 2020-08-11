@@ -24,7 +24,6 @@ const printChart = (item) => {
         title: "Corona status",
         backgroundColor: "transparent",
       }}
-      rootProps={{ "data-testid": "2" }}
     />
   );
 };

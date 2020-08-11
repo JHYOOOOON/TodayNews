@@ -4,6 +4,11 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+body,
+input,
+textarea {
+  font-family: "Noto Sans KR", sans-serif;
+}
 
 p {
   margin: 0;
