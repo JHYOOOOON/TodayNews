@@ -33,7 +33,7 @@ export default class ContactForm extends React.Component {
   };
 
   sendEmail = (e) => {
-    console.log("send");
+    // console.log("send");
     e.preventDefault();
     const templateOptions = {
       senderName: this.state.senderName,
@@ -50,8 +50,8 @@ export default class ContactForm extends React.Component {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          alert("Send");
+          // console.log(result.text);
+          alert("Send email!");
           this.setState({
             senderName: "",
             message: "",
@@ -59,7 +59,7 @@ export default class ContactForm extends React.Component {
           });
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
           alert("Error");
         }
       );

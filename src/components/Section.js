@@ -5,11 +5,11 @@ import ContactWrap from "./Contact/ContactWrap";
 
 const Section = () => {
   return (
-    <>
+    <section>
       <Typing />
       <Newswrap />
       <ContactWrap />
-    </>
+    </section>
   );
 };
 

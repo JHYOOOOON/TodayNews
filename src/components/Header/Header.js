@@ -1,21 +1,55 @@
 import React from "react";
 import "./Header.scss";
 
-const Header = () => {
-  return (
-    <div className="header-wrapper">
-      <header>
-        <div className="logo">
-          <span className="home">TodayNews</span>
-        </div>
-        <div className="menu">
-          <span className="home">HOME</span>
-          <span className="news">NEWS</span>
-          <span className="contact">CONTACT</span>
-        </div>
-      </header>
-    </div>
-  );
-};
+class Header extends React.Component {
+  state = {
+    news: null,
+    contact: null,
+  };
+
+  scrollToHome = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  scrollToNews = () => {
+    window.scrollTo({ top: this.state.news, behavior: "smooth" });
+  };
+
+  scrollToContact = () => {
+    window.scrollTo({ top: this.state.contact, behavior: "smooth" });
+  };
+
+  handleResize = () => {
+    let height = window.innerHeight > 500 ? window.innerHeight : 500;
+    this.setState({ news: height, contact: height * 2 });
+  };
+
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener("resize", this.handleResize);
+  }
+  render() {
+    return (
+      <div className="header-wrapper">
+        <header>
+          <div className="logo">
+            <span onClick={this.scrollToHome}>TodayNews</span>
+          </div>
+          <div className="menu">
+            <span className="home" onClick={this.scrollToHome}>
+              HOME
+            </span>
+            <span className="news" onClick={this.scrollToNews}>
+              NEWS
+            </span>
+            <span className="contact" onClick={this.scrollToContact}>
+              CONTACT
+            </span>
+          </div>
+        </header>
+      </div>
+    );
+  }
+}
 
 export default Header;

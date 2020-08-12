@@ -19,7 +19,7 @@ class WeatherContainer extends React.Component {
         return res.json();
       })
       .then((data) => {
-        console.log(":::", data);
+        // console.log(":::", data);
         this.setState({ data: data });
       });
   }

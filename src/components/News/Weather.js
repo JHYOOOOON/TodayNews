@@ -56,7 +56,7 @@ const printWeatherInform = (weatherData) => {
 };
 
 const Weather = ({ weatherData }) => {
-  console.log(weatherData);
+  // console.log(weatherData);
   return (
     <article className="weather-article">
       <p className="weather-title">Weather</p>

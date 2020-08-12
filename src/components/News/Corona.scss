@@ -30,9 +30,19 @@
         }
       }
     }
-    .corona-right {
-      display: block;
-      margin: 0 auto;
-    }
+  }
+}
+
+.pc {
+  .corona-right {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.tablet,
+.mobile {
+  .corona-right {
+    display: none;
   }
 }
