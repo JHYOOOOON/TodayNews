@@ -4,8 +4,15 @@
   height: 100vh;
   min-height: 500px;
   .news-section {
-    margin: 80px auto;
+    margin: 5em auto;
     width: 85%;
     display: flex;
+  }
+}
+
+.tablet,
+.mobile {
+  .news-section {
+    flex-direction: column;
   }
 }

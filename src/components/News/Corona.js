@@ -6,8 +6,8 @@ import "./Corona.scss";
 const printChart = (item) => {
   return (
     <Chart
-      width={"170px"}
-      height={"150px"}
+      width={"160px"}
+      height={"140px"}
       chartType="PieChart"
       loader={<Loading />}
       data={[

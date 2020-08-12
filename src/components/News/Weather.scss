@@ -1,8 +1,7 @@
 .weather-article {
   display: flex;
-  flex-direction: column;
-  padding: 10px;
   width: 100%;
+  padding: 0 10px;
   .weather-title {
     font-weight: 700;
     font-size: 1.4em;
@@ -12,9 +11,7 @@
     font-size: 13px;
   }
   .weather-flex {
-    flex: 1;
     display: flex;
-    padding-top: 20px;
     gap: 10px;
     .weather-temp,
     .weather-current,
@@ -24,7 +21,7 @@
     }
     .weather-temp {
       > span:first-child {
-        font-size: 1.8em;
+        font-size: 1.6em;
       }
       > p,
       span {
@@ -40,7 +37,7 @@
     .weather-current,
     .weather-humid {
       > span {
-        margin-top: 10px;
+        margin-top: 0.4em;
       }
     }
     > div {
@@ -50,11 +47,31 @@
       justify-content: center;
       align-items: center;
       > i {
-        font-size: 2.7em;
+        font-size: 2.5em;
       }
       span {
         font-size: 1.2em;
       }
+    }
+  }
+}
+
+.pc {
+  .weather-article {
+    flex-direction: column;
+    .weather-flex {
+      padding-top: 0.7em;
+      flex: 1;
+    }
+  }
+}
+
+.tablet,
+.mobile {
+  .weather-article {
+    justify-content: space-between;
+    .weather-flex {
+      flex: 0.9;
     }
   }
 }

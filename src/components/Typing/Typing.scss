@@ -23,12 +23,29 @@
   .typing {
     width: 28ch;
     font-family: "Courier New", Courier, monospace;
-    font-size: 2em;
     overflow: hidden;
     font-weight: 300;
     white-space: nowrap;
     border-right: 2px solid #333;
     animation: typing 2s steps(28), blink 0.5s step-end infinite alternate;
+  }
+}
+
+.pc {
+  .typing {
+    font-size: 30px;
+  }
+}
+
+.tablet {
+  .typing {
+    font-size: 25px;
+  }
+}
+
+.mobile {
+  .typing {
+    font-size: 18px;
   }
 }
 

@@ -1,28 +1,13 @@
 .news-article {
-  padding: 10px;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: #eee;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #ccc;
-    &:hover {
-      background: #aaa;
-    }
-  }
+  padding: 0 10px;
   .news-article-title {
     font-size: 1.4em;
     font-weight: 700;
     margin: 0;
-    padding: 0 10px;
   }
   .news-item-wrapper {
     text-align: left;
-    padding: 20px 10px;
+    padding: 20px 0px;
     .news-title {
       margin: 0;
       font-size: 1.2em;

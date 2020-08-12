@@ -59,8 +59,10 @@ const Weather = ({ weatherData }) => {
   // console.log(weatherData);
   return (
     <article className="weather-article">
-      <p className="weather-title">Weather</p>
-      <p className="weather-location">Location: {weatherData.name}</p>
+      <div>
+        <p className="weather-title">Weather</p>
+        <p className="weather-location">Location: {weatherData.name}</p>
+      </div>
       {printWeatherInform(weatherData)}
     </article>
   );
