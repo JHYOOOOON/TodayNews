@@ -4,14 +4,29 @@ import "./reset.css";
 import Section from "./components/Section";
 import Footer from "./components/Footer/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Section />
-      <Footer />
-    </div>
-  );
+class App extends React.Component {
+  state = { width: "" };
+
+  updateWidth = () => {
+    const width = window.innerWidth;
+    if (width > 1200) this.setState({ width: "pc" });
+    else if (width > 640) this.setState({ width: "tablet" });
+    else this.setState({ width: "mobile" });
+  };
+
+  componentDidMount() {
+    this.updateWidth();
+    window.addEventListener("resize", this.updateWidth);
+  }
+  render() {
+    return (
+      <div className={`App ${this.state.width}`}>
+        <Header />
+        <Section />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

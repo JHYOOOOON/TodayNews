@@ -6,18 +6,12 @@ const Header = () => {
     <div className="header-wrapper">
       <header>
         <div className="logo">
-          <span>TodayNews</span>
+          <span className="home">TodayNews</span>
         </div>
         <div className="menu">
-          <span>
-            <a>HOME</a>
-          </span>
-          <span>
-            <a>NEWS</a>
-          </span>
-          <span>
-            <a>CONTACT</a>
-          </span>
+          <span className="home">HOME</span>
+          <span className="news">NEWS</span>
+          <span className="contact">CONTACT</span>
         </div>
       </header>
     </div>
