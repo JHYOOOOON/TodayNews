@@ -1,16 +1,22 @@
 .contact-wrapper {
   height: 100vh;
-  min-height: 500px;
+  min-height: 550px;
   display: flex;
   background-color: rgba(37, 132, 158, 0.1);
 
   .contact-section {
     display: flex;
-    margin: 5em auto;
+    margin: 4.5em auto;
     width: 84%;
     background-color: #eee;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+.mobile {
+  .contact-section {
+    flex-direction: column;
   }
 }

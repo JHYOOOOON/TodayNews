@@ -20,7 +20,7 @@ class Header extends React.Component {
   };
 
   handleResize = () => {
-    let height = window.innerHeight > 500 ? window.innerHeight : 500;
+    let height = window.innerHeight > 550 ? window.innerHeight : 550;
     this.setState({ news: height, contact: height * 2 });
   };
 
