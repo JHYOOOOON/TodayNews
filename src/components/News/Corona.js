@@ -23,6 +23,9 @@ const printChart = (item) => {
         legend: { position: "none" },
         title: "Corona status",
         backgroundColor: "transparent",
+        tooltip: { trigger: "none" },
+        pieSliceTextStyle: { fontSize: 13 },
+        colors: ["#b50000", "#cfb300", "#444", "#009e37"],
       }}
     />
   );
@@ -39,10 +42,18 @@ const printUpdateTime = (time) => {
 const printCorona = (item) => {
   return (
     <div className="corona-inform">
-      <p>확진자: {formatNumber(item.confirmed)}명</p>
-      <p>심각: {formatNumber(item.critical)}명</p>
-      <p>사망: {formatNumber(item.deaths)}명</p>
-      <p>회복: {formatNumber(item.recovered)}명</p>
+      <p>
+        <span className="red">확진자</span> {formatNumber(item.confirmed)}명
+      </p>
+      <p>
+        <span className="yellow">심각</span> {formatNumber(item.critical)}명
+      </p>
+      <p>
+        <span className="black">사망</span> {formatNumber(item.deaths)}명
+      </p>
+      <p>
+        <span className="green">회복</span> {formatNumber(item.recovered)}명
+      </p>
     </div>
   );
 };

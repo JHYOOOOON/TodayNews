@@ -25,6 +25,18 @@
           font-size: 1.1em;
           font-weight: 500;
           margin: 5px 0;
+          .red {
+            color: #b50000;
+          }
+          .green {
+            color: #009e37;
+          }
+          .yellow {
+            color: #cfb300;
+          }
+          .black {
+            color: #444;
+          }
         }
       }
     }
@@ -51,6 +63,7 @@
       > p {
         flex: 1;
         display: flex;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
