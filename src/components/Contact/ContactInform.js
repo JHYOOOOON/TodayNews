@@ -14,21 +14,59 @@ const linkSpan = (link) => {
   );
 };
 
+const toggleTooltip = () => {
+  const toolTip = document.getElementsByClassName("tooltip")[0];
+  console.log(toolTip.style.visibility);
+  if (
+    toolTip.style.visibility === "hidden" ||
+    toolTip.style.visibility === ""
+  ) {
+    toolTip.style.visibility = "visible";
+    toolTip.style.opacity = 1;
+  } else {
+    toolTip.style.visibility = "hidden";
+    toolTip.style.opacity = 0;
+  }
+};
+
+const copyText = () => {
+  getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNodeContents(document.getElementsByClassName("email")[0]);
+  getSelection().addRange(range);
+  document.execCommand("copy");
+  toggleTooltip();
+  setTimeout(toggleTooltip, 1500);
+};
+
 const ContactInform = () => {
   return (
     <div className="contact-left">
       <p className="contact-title">Contact Us</p>
       <div className="link-container">
-        <div>
+        <div className="email-wrapper" onClick={copyText}>
           <MdEmail />
-          <span>jhyooooooon@gmail.com</span>
+          <span className="email">jhyooooooon@gmail.com</span>
+          <span className="tooltip">COPY</span>
         </div>
         <div>
-          <GrGithub />
+          <a
+            href="https://github.com/JHYOOOOON"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GrGithub />
+          </a>
           {linkSpan("github.com/JHYOOOOON")}
         </div>
         <div>
-          <FaBlog />
+          <a
+            href="https://blog.naver.com/chon_5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaBlog />
+          </a>
           {linkSpan("blog.naver.com/chon_5")}
         </div>
       </div>

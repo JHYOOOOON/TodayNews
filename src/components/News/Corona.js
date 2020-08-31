@@ -1,6 +1,5 @@
 import React from "react";
 import { Chart } from "react-google-charts";
-import Loading from "../Loading/Loading";
 import "./Corona.scss";
 
 const printChart = (item) => {
@@ -9,7 +8,7 @@ const printChart = (item) => {
       width={"160px"}
       height={"140px"}
       chartType="PieChart"
-      loader={<Loading />}
+      loader={<div></div>}
       data={[
         ["section", "people"],
         ["confirmed", item.confirmed],
