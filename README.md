@@ -19,7 +19,6 @@ API(Google news, COVID-19 data, OpenWeatherMap)
 - EmailJS를 이용해 이메일 전송
 - Contact에서 이메일 클릭 시 클립보드로 복사
 <br/>
-<br/>
 
 ### **📸 스크린샷**
 |PC|Tablet|Mobile|
