@@ -21,6 +21,7 @@ API(Google news, COVID-19 data, OpenWeatherMap)
 - EmailJS를 이용해 이메일 전송
 - Contact에서 이메일 클릭 시 클립보드로 복사
   <br/>
+  <br/>
 
 ### **📸 스크린샷**
 
@@ -31,13 +32,13 @@ API(Google news, COVID-19 data, OpenWeatherMap)
         <th>Mobile</th>
     </tr>
     <tr>
-        <td style="vertical-align: top">
+        <td valign="top">
             <img src="https://imgur.com/gcTrx4K.png" width="300px"/>
         </td>
-        <td style="vertical-align: top">
+        <td valign="top">
             <img src="https://imgur.com/uy4iQWB.png" width="300px"/>
         </td>
-        <td style="vertical-align: top">
+        <td valign="top">
             <img src="https://imgur.com/awC8bvk.png" width="300px"/>
         </td>
     </tr>
